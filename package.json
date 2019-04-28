@@ -1,0 +1,15 @@
+{
+  "name": "redux-smith",
+  "version": "0.0.0",
+  "description": "Redux code generator",
+  "main": "index.js",
+  "repository": "https://github.com/devilune/redux-smith.git",
+  "author": "devilune",
+  "license": "MIT",
+  "bin": {
+    "smith": "./index.js"
+  },
+  "dependencies": {
+    "commander": "^2.20.0"
+  }
+}
