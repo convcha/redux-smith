@@ -1,7 +1,7 @@
-const program = require("commander");
-const mypackage = require('../package.json');
+import commander from "commander";
+import mypackage from "../package.json"
 
-program
+commander
   .version(mypackage.version, '-v, --version')
   .parse(process.argv);
 
