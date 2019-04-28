@@ -13,7 +13,7 @@
     "watch": "webpack --config webpack.config.dev.js --watch",
     "build": "babel src -d lib",
     "prepare": "webpack --config webpack.config.js",
-    "patch": "yarn run np patch --no-release-draft"
+    "patch": "yarn run np patch --no-release-draft --any-branch"
   },
   "babel": {
     "plugins": [
