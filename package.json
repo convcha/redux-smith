@@ -7,9 +7,12 @@
   "author": "devilune",
   "license": "MIT",
   "bin": {
-    "smith": "./index.js"
+    "smith": "./bin/smith.js"
   },
   "scripts": {
+    "watch": "webpack --config webpack.config.dev.js --watch",
+    "build": "webpack",
+    "prepare": "webpack --config webpack.config.js",
     "patch": "yarn run np patch --no-release-draft"
   },
   "keywords": [
@@ -20,6 +23,13 @@
     "commander": "^2.20.0"
   },
   "devDependencies": {
-    "np": "^5.0.1"
+    "@types/commander": "^2.12.2",
+    "@types/node": "^11.13.8",
+    "np": "^5.0.1",
+    "ts-loader": "^5.4.4",
+    "typescript": "^3.4.5",
+    "webpack": "^4.30.0",
+    "webpack-cli": "^3.3.1",
+    "webpack-merge": "^4.2.1"
   }
 }
