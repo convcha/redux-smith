@@ -9,7 +9,13 @@
   "bin": {
     "smith": "./index.js"
   },
+  "scripts": {
+    "patch": "yarn run np patch --no-release-draft"
+  },
   "dependencies": {
     "commander": "^2.20.0"
+  },
+  "devDependencies": {
+    "np": "^5.0.1"
   }
 }
