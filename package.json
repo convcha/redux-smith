@@ -11,20 +11,41 @@
   },
   "scripts": {
     "watch": "webpack --config webpack.config.dev.js --watch",
-    "build": "webpack",
+    "build": "babel src -d lib",
     "prepare": "webpack --config webpack.config.js",
     "patch": "yarn run np patch --no-release-draft"
+  },
+  "babel": {
+    "plugins": [
+      "@babel/plugin-proposal-class-properties",
+      "@babel/plugin-transform-modules-commonjs"
+    ],
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ]
   },
   "keywords": [
     "redux",
     "cli"
   ],
   "dependencies": {
-    "commander": "^2.20.0"
+    "commander": "^2.20.0",
+    "ink": "^2.1.1",
+    "react": "^16.8.6"
   },
   "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.4",
+    "@babel/plugin-proposal-class-properties": "^7.4.4",
+    "@babel/plugin-transform-modules-commonjs": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "@babel/preset-react": "^7.0.0",
     "@types/commander": "^2.12.2",
     "@types/node": "^11.13.8",
+    "@types/react": "^16.8.14",
+    "babel-loader": "^8.0.5",
+    "import-jsx": "^2.0.0",
     "np": "^5.0.1",
     "ts-loader": "^5.4.4",
     "typescript": "^3.4.5",

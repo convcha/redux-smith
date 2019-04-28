@@ -1,16 +1,19 @@
 module.exports = {
-  entry: './src/index.ts',
+  entry: './src/index.tsx',
   target: 'node',
   module: {
     rules: [
       {
-        test: /\.ts$/,
-        use: ['ts-loader'],
+        test: /\.tsx?$/,
+        use: [
+          { loader: "babel-loader" },
+          { loader: "ts-loader" }
+        ],
         exclude: /node_modules/
       }
     ]
   },
   resolve: {
-    extensions: [ '.ts', '.js' ]
+    extensions: [ 'tsx', '.ts', '.js' ]
   }
 };
