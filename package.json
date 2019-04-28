@@ -1,6 +1,6 @@
 {
   "name": "redux-smith",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "Redux code generator",
   "main": "index.js",
   "repository": "https://github.com/devilune/redux-smith.git",
