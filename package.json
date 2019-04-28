@@ -12,6 +12,10 @@
   "scripts": {
     "patch": "yarn run np patch --no-release-draft"
   },
+  "keywords": [
+    "redux",
+    "cli"
+  ],
   "dependencies": {
     "commander": "^2.20.0"
   },
