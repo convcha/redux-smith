@@ -1,7 +1,8 @@
 const program = require("commander");
+const mypackage = require('../package.json');
 
 program
-  .version('0.0.10', '-v, --version')
+  .version(mypackage.version, '-v, --version')
   .parse(process.argv);
 
 console.log("redux-smith");
